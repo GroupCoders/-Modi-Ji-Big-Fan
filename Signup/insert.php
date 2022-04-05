@@ -35,14 +35,14 @@ if (isset($_POST['submit'])) {
             if ($rnum == 0) {
                 $stmt->close();
                 $stmt = $conn->prepare($Insert);
-                $stmt->bind_param("ssssii", $fullName, $Password, $PhoneNumber, $Email, $Age, $Gender);
+                $stmt->bind_param("ssssis", $fullName, $Password, $PhoneNumber, $Email, $Age, $Gender);
                 if ($stmt->execute()) {
                     echo "New record inserted successfully.";
                 } else {
                     echo $stmt->error;
                 }
             } else {
-                echo "Someone already registers using this email.";
+                echo "Someone has already registered using this email.";
             }
             $stmt->close();
             $conn->close();
