@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <!---<title> Responsive Registration Form | CodingLab </title>--->
+    <link rel="stylesheet" href="../Report/report.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<script src="createAccountJS.js"></script>
+
+
+<div class="navbar">
+    <img src="https://groupcoders.github.io/-Modi-Ji-Big-Fan/logo.png" class="logo">
+    <nav>
+        <ul id="menulist">
+            <li><a href="">About Us</a></li>
+            <li><a href="">Report</a></li>
+            <li><a href="">Login</a></li>
+        </ul>
+    </nav>
+    <img src="https://groupcoders.github.io/-Modi-Ji-Big-Fan/menu.png" class="menu" onclick="togglemenu()">
+</div>
+<br>
+
+
+    <div class="container">
+        <div class="title">Create an Account</div>
+        <div class="content">
+            <form action="insert.php" method="post">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Full name</span>
+                        <input type="text" placeholder="Enter you full name" id="FnameFromUser">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="text" placeholder="Enter your email" id="emailFromUser">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Password</span>
+                        <input type="text" placeholder="Enter you password" id="passwordFromUser">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Phone Number</span>
+                        <input type="text" placeholder="Enter you phone no." id="phoneFromUser">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Age</span>
+                        <input type="text" placeholder="Enter your age" id="ageFromUser">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Gender</span>
+                        <input type="text" placeholder="Enter you gender" id="genderFromUser">
+                    </div>
+
+                </div>
+
+                <div class="button">
+                    <input type="submit" value="Register">
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
