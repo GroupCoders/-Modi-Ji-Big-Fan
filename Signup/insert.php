@@ -25,7 +25,7 @@ if (isset($_POST['submit'])) {
             $Select = "SELECT Email FROM register WHERE Email = ? LIMIT 1";
             $Insert = "INSERT INTO register(fullName, Password, PhoneNumber, Email, Age, Gender) values(?, ?, ?, ?, ?, ?)";
             $stmt = $conn->prepare($Select);
-            $stmt->bind_param("s", $email);
+            $stmt->bind_param("s", $Email);
             $stmt->execute();
             $stmt->bind_result($resultEmail);
             $stmt->store_result();
