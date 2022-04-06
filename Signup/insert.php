@@ -16,13 +16,13 @@ if (isset($_POST['submit'])) {
         $host = "localhost";
         $dbUsername = "root";
         $dbPassword = "";
-        $dbName = "CreateAccount";
+        $dbName = "lakshyaop";
 
         $conn = new mysqli($host, $dbUsername, $dbPassword, $dbName);
         if ($conn->connect_error) {
             die('Could not connect to the database.');
         } else {
-            $Select = "SELECT email FROM register WHERE email = ? LIMIT 1";
+            $Select = "SELECT Email FROM register WHERE Email = ? LIMIT 1";
             $Insert = "INSERT INTO register(fullName, Password, PhoneNumber, Email, Age, Gender) values(?, ?, ?, ?, ?, ?)";
             $stmt = $conn->prepare($Select);
             $stmt->bind_param("s", $email);
