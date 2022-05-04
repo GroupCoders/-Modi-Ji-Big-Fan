@@ -8,14 +8,9 @@
     // ---------------------- References ---------------------------------//
 
     function signupFunction() {
-        alert("Data\n"  + "Username : " + name + "\n"
-                        + "Email : " + email + "\n"
-                        + "Phone : " + phone + "\n"
-                        + "Age : " + age + "\n"
-                        + "Gender : " + gender + "\n"
-                        + "Password : " + password + "\n"
-             + "That is all ur info");
-
+        //var result ="<?php phpSignUP(); ?>"
+        //document.write(result);
+        console.log("It worked");
     }
 
     document.getElementById("signupButton").addEventListener("click", signupFunction);
